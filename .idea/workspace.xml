@@ -23,7 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f461ba36-31bc-4d9f-a8e9-eb834d967a0f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/pet/PetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/pet/PetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/pet/PetDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/pet/PetDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/schedule/ScheduleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/schedule/ScheduleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/schedule/ScheduleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/schedule/ScheduleDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/user/CustomerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/user/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/udacity/jdnd/course3/critter/user/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/udacity/jdnd/course3/critter/CritterFunctionalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/udacity/jdnd/course3/critter/CritterFunctionalTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,9 +76,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CritterFunctionalTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -85,6 +93,85 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CritterFunctionalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="critter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.jdnd.course3.critter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.jdnd.course3.critter" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.jdnd.course3.critter.CritterFunctionalTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CritterFunctionalTest.testAddPetsToCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="critter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.jdnd.course3.critter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.jdnd.course3.critter" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.jdnd.course3.critter.CritterFunctionalTest" />
+      <option name="METHOD_NAME" value="testAddPetsToCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CritterFunctionalTest.testCreateCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="critter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.jdnd.course3.critter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.jdnd.course3.critter" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.jdnd.course3.critter.CritterFunctionalTest" />
+      <option name="METHOD_NAME" value="testCreateCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CritterFunctionalTest.testFindOwnerByPet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="critter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.jdnd.course3.critter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.jdnd.course3.critter" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.jdnd.course3.critter.CritterFunctionalTest" />
+      <option name="METHOD_NAME" value="testFindOwnerByPet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CritterFunctionalTest.testFindPetsByOwner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="critter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.udacity.jdnd.course3.critter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.udacity.jdnd.course3.critter" />
+      <option name="MAIN_CLASS_NAME" value="com.udacity.jdnd.course3.critter.CritterFunctionalTest" />
+      <option name="METHOD_NAME" value="testFindPetsByOwner" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CritterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="critter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.udacity.jdnd.course3.critter.CritterApplication" />
@@ -92,6 +179,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CritterFunctionalTest" />
+        <item itemvalue="JUnit.CritterFunctionalTest.testAddPetsToCustomer" />
+        <item itemvalue="JUnit.CritterFunctionalTest.testFindOwnerByPet" />
+        <item itemvalue="JUnit.CritterFunctionalTest.testCreateCustomer" />
+        <item itemvalue="JUnit.CritterFunctionalTest.testFindPetsByOwner" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +201,7 @@
       <workItem from="1610130489940" duration="1179000" />
       <workItem from="1610465053842" duration="54000" />
       <workItem from="1611056149828" duration="2110000" />
-      <workItem from="1611341148267" duration="1598000" />
+      <workItem from="1611341148267" duration="40388000" />
     </task>
     <servers />
   </component>
@@ -125,41 +221,62 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="160" key="#com.intellij.ide.util.MemberChooser" timestamp="1611353801639">
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1611444436320">
+      <screen x="0" y="0" width="1440" height="849" />
+    </state>
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.849@0.0.1440.849" timestamp="1611444436320" />
+    <state x="100" y="100" width="1240" height="700" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1611427988061" />
+    <state x="533" y="160" key="#com.intellij.ide.util.MemberChooser" timestamp="1611444548797">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="533" y="160" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1611353801639" />
-    <state width="1398" height="59" key="GridCell.Tab.0.bottom" timestamp="1611333034932">
+    <state x="533" y="160" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1611444548797" />
+    <state x="489" y="317" width="462" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1611354688095">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="59" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611333034932" />
-    <state width="1398" height="59" key="GridCell.Tab.0.center" timestamp="1611333034930">
+    <state x="489" y="317" width="462" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900@0.0.1440.900" timestamp="1611354688095" />
+    <state x="458" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611434706628">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="59" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611333034930" />
-    <state width="1398" height="59" key="GridCell.Tab.0.left" timestamp="1611333034929">
+    <state x="458" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611434706628" />
+    <state width="1398" height="371" key="GridCell.Tab.0.bottom" timestamp="1611445026062">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="59" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611333034929" />
-    <state width="1398" height="59" key="GridCell.Tab.0.right" timestamp="1611333034931">
+    <state width="1398" height="371" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611445026062" />
+    <state width="1398" height="371" key="GridCell.Tab.0.center" timestamp="1611445026060">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="59" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611333034931" />
-    <state width="1398" height="59" key="GridCell.Tab.1.bottom" timestamp="1611333034939">
+    <state width="1398" height="371" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611445026060" />
+    <state width="1398" height="371" key="GridCell.Tab.0.left" timestamp="1611445026059">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="59" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611333034939" />
-    <state width="1398" height="59" key="GridCell.Tab.1.center" timestamp="1611333034936">
+    <state width="1398" height="371" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611445026059" />
+    <state width="1398" height="371" key="GridCell.Tab.0.right" timestamp="1611445026061">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="59" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1611333034936" />
-    <state width="1398" height="59" key="GridCell.Tab.1.left" timestamp="1611333034935">
+    <state width="1398" height="371" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611445026061" />
+    <state width="1398" height="267" key="GridCell.Tab.1.bottom" timestamp="1611443212124">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="59" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1611333034935" />
-    <state width="1398" height="59" key="GridCell.Tab.1.right" timestamp="1611333034938">
+    <state width="1398" height="267" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611443212124" />
+    <state width="1398" height="267" key="GridCell.Tab.1.center" timestamp="1611443212123">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="59" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611333034938" />
+    <state width="1398" height="267" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1611443212123" />
+    <state width="1398" height="267" key="GridCell.Tab.1.left" timestamp="1611443212122">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="267" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1611443212122" />
+    <state width="1398" height="267" key="GridCell.Tab.1.right" timestamp="1611443212124">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="267" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611443212124" />
+    <state x="435" y="234" key="refactoring.ChangeSignatureDialog" timestamp="1611437611579">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="435" y="234" key="refactoring.ChangeSignatureDialog/0.0.1440.900@0.0.1440.900" timestamp="1611437611579" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1611400472541">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1611400472541" />
   </component>
 </project>
