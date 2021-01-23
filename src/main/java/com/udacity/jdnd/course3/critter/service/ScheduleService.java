@@ -39,22 +39,22 @@ public class ScheduleService {
         return scheduleRepository.save(schedule);
     }
 
-    List<Schedule> getAllSchedules () {
+    public List<Schedule> getAllSchedules() {
         return scheduleRepository.findAll();
     }
 
-    List<Schedule> getScheduleForPet (long petId) {
+    public List<Schedule> getScheduleForPet(long petId) {
       Pet pet =  petRepository.getOne(petId);
       return scheduleRepository.findByPets(pet);
     }
 
-    List<Schedule> getScheduleForEmployee (long employeeId) {
+    public List<Schedule> getScheduleForEmployee(long employeeId) {
         Employee employee = employeeRepository.getOne(employeeId);
         List<Schedule> schedules = scheduleRepository.findByEmployee(employee);
         return schedules;
     }
 
-    List<Schedule> getScheduleForCustomer (long customerId) {
+    public List<Schedule> getScheduleForCustomer(long customerId) {
         Customer customer = customerRepository.getOne(customerId);
         List<Schedule> schedules = scheduleRepository.findByPetsIn(customer.getPets());
         return schedules;

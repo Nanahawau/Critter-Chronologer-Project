@@ -79,7 +79,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
-  <component name="RunManager" selected="JUnit.CritterFunctionalTest">
+  <component name="RunManager" selected="Spring Boot.CritterApplication">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -201,7 +201,7 @@
       <workItem from="1610130489940" duration="1179000" />
       <workItem from="1610465053842" duration="54000" />
       <workItem from="1611056149828" duration="2110000" />
-      <workItem from="1611341148267" duration="40388000" />
+      <workItem from="1611341148267" duration="41069000" />
     </task>
     <servers />
   </component>
@@ -238,22 +238,22 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="205" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611434706628" />
-    <state width="1398" height="371" key="GridCell.Tab.0.bottom" timestamp="1611445026062">
+    <state width="1398" height="128" key="GridCell.Tab.0.bottom" timestamp="1611445866985">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="371" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611445026062" />
-    <state width="1398" height="371" key="GridCell.Tab.0.center" timestamp="1611445026060">
+    <state width="1398" height="128" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611445866985" />
+    <state width="1398" height="128" key="GridCell.Tab.0.center" timestamp="1611445866982">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="371" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611445026060" />
-    <state width="1398" height="371" key="GridCell.Tab.0.left" timestamp="1611445026059">
+    <state width="1398" height="128" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611445866982" />
+    <state width="1398" height="128" key="GridCell.Tab.0.left" timestamp="1611445866980">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="371" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611445026059" />
-    <state width="1398" height="371" key="GridCell.Tab.0.right" timestamp="1611445026061">
+    <state width="1398" height="128" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611445866980" />
+    <state width="1398" height="128" key="GridCell.Tab.0.right" timestamp="1611445866983">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="371" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611445026061" />
+    <state width="1398" height="128" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611445866983" />
     <state width="1398" height="267" key="GridCell.Tab.1.bottom" timestamp="1611443212124">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
