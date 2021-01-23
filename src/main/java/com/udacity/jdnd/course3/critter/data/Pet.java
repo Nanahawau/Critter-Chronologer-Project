@@ -1,6 +1,7 @@
-package com.udacity.jdnd.course3.critter.pet;
+package com.udacity.jdnd.course3.critter.data;
 
-import com.udacity.jdnd.course3.critter.user.Customer;
+import com.udacity.jdnd.course3.critter.data.Customer;
+import com.udacity.jdnd.course3.critter.pet.PetType;
 import org.hibernate.annotations.Nationalized;
 
 import javax.persistence.*;
