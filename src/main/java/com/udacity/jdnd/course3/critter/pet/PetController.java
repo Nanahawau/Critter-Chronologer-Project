@@ -24,34 +24,34 @@ public class PetController {
         pet.setName(petDTO.getName());
         pet.setBirthDate(petDTO.getBirthDate());
         pet.setNotes(petDTO.getNotes());
-        return getPetDTO(petService.savePet(pet, petDTO.getOwnerId()));
+        return convertToPetDTO(petService.savePet(pet, petDTO.getOwnerId()));
     }
 
     @GetMapping("/{petId}")
     public PetDTO getPet(@PathVariable long petId) {
         Pet pet = petService.getPet(petId);
-        return getPetDTO(pet);
+        return convertToPetDTO(pet);
     }
 
     @GetMapping
     public List<PetDTO> getPets(){
-        return petService.getPets().stream().map(this::getPetDTO).collect(Collectors.toList());
+        return petService.getPets().stream().map(this::convertToPetDTO).collect(Collectors.toList());
     }
 
     @GetMapping("/owner/{ownerId}")
     public List<PetDTO> getPetsByOwner(@PathVariable long ownerId) {
         System.out.println(petService.getPetsByOwner(ownerId).stream()
-                .map(this::getPetDTO).collect(Collectors.toList()) + "mapspets");
+                .map(this::convertToPetDTO).collect(Collectors.toList()) + "mapspets");
 
         System.out.println(petService.getPetsByOwner(ownerId) + "ownerid");
 
-        return petService.getPetsByOwner(ownerId).stream().map(this::getPetDTO).collect(Collectors.toList());
+        return petService.getPetsByOwner(ownerId).stream().map(this::convertToPetDTO).collect(Collectors.toList());
     }
 
 
 
     // DTO Conversions
-    private PetDTO getPetDTO(Pet pet) {
+    private PetDTO convertToPetDTO(Pet pet) {
         PetDTO petDTO = new PetDTO();
         petDTO.setId(pet.getId());
         petDTO.setName(pet.getName());

@@ -33,17 +33,17 @@ public class UserController {
         customer.setPhoneNumber(customerDTO.getPhoneNumber());
         customer.setNotes(customerDTO.getNotes());
         List<Long> petIds = customerDTO.getPetIds();
-        return getCustomerDTO(userService.saveCustomer(customer, petIds));
+        return convertToCustomerDTO(userService.saveCustomer(customer, petIds));
     }
 
     @GetMapping("/customer")
     public List<CustomerDTO> getAllCustomers(){
-      return userService.getAllCustomers().stream().map(this::getCustomerDTO).collect(Collectors.toList());
+      return userService.getAllCustomers().stream().map(this::convertToCustomerDTO).collect(Collectors.toList());
     }
 
     @GetMapping("/customer/pet/{petId}")
     public CustomerDTO getOwnerByPet(@PathVariable long petId){
-        return getCustomerDTO(userService.getOwnerByPet(petId));
+        return convertToCustomerDTO(userService.getOwnerByPet(petId));
     }
 
     @PostMapping("/employee")
@@ -65,34 +65,16 @@ public class UserController {
     @GetMapping("/employee/availability")
     public List<EmployeeDTO> findEmployeesForService(@RequestBody EmployeeRequestDTO employeeDTO) {
         List<Employee> employees = userService.findEmployeesForService(employeeDTO);
-        return employees.stream().map(this::getEmployeeDTO).collect(Collectors.toList());
+        return employees.stream().map(this::convertToEmployeeDTO).collect(Collectors.toList());
     }
 
 
     // DTO Conversions
-    private static CustomerDTO convertEntityToCustomerDTO (Customer user) {
-        CustomerDTO customerDTO = new CustomerDTO();
-        BeanUtils.copyProperties(user, customerDTO);
-        return customerDTO;
-    }
 
     private static EmployeeDTO convertEntityToEmployeeDTO (Employee user) {
         EmployeeDTO employeeDTO = new EmployeeDTO();
         BeanUtils.copyProperties(user, employeeDTO);
         return employeeDTO;
-    }
-
-    private static EmployeeRequestDTO convertEntityToEmployeeRequestDTO (Employee user) {
-        EmployeeRequestDTO employeeRequestDTO = new EmployeeRequestDTO();
-        BeanUtils.copyProperties(user, employeeRequestDTO);
-        return employeeRequestDTO;
-    }
-
-
-    private static Customer convertCustomerDTOToUser (CustomerDTO customerDTO) {
-        Customer user = new Customer();
-        BeanUtils.copyProperties(customerDTO, user);
-        return user;
     }
 
 
@@ -102,13 +84,8 @@ public class UserController {
         return user;
     }
 
-    private static Employee convertEmployeeRequestDTOToUser (EmployeeRequestDTO employeeRequestDTO) {
-        Employee user = new Employee();
-        BeanUtils.copyProperties(employeeRequestDTO, user);
-        return user;
-    }
 
-    private CustomerDTO getCustomerDTO(Customer customer) {
+    private CustomerDTO convertToCustomerDTO(Customer customer) {
         CustomerDTO customerDTO = new CustomerDTO();
         customerDTO.setId(customer.getId());
         customerDTO.setName(customer.getName());
@@ -119,7 +96,7 @@ public class UserController {
         return customerDTO;
     }
 
-    private EmployeeDTO getEmployeeDTO(Employee employee) {
+    private EmployeeDTO convertToEmployeeDTO(Employee employee) {
         EmployeeDTO employeeDTO = new EmployeeDTO();
         employeeDTO.setId(employee.getId());
         employeeDTO.setName(employee.getName());
